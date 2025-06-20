@@ -435,3 +435,14 @@ box-shadow: 0 10px 20px #920aca6e;
   width: 100%;
   background: #a259ff;
 }
+
+/* ========================
+   service 
+======================== */
+.card-top-line {
+  height: 6px;
+  background-color: #22B8F5;
+}
+.btn-underline {
+  border-bottom: 3px solid #e614df;
+}
