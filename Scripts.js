@@ -13,3 +13,6 @@
       document.getElementById('Bhalekar-footer-placeholder').innerHTML = data;
     })
     .catch(err => console.error("Footer load error:", err));
+
+
+
