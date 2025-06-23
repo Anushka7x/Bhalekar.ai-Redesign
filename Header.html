@@ -18,45 +18,91 @@
 <body>
 <div id="Bhalekar-header-container">
         <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top py-3">
-                <div class="container-fluid">
-
-                    <!-- Logo -->
-                    <a class="navbar-brand text-white" href="#">
-                        <img src="assets/navbar/Bhalekarlogo.png" alt="Logo" height="28">
-                    </a>
-
-                    <!-- Mobile Toggler -->
-                    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <!-- Center Nav Items -->
-                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Industries</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Technology</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Insights</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Right Icons -->
-                    <div class="align-items-center">
-                        <button class="icon-btn" title="Search"><i class="bi bi-search"></i></button>
-                        <button class="icon-btn" title="Account"><i class="bi bi-person-circle"></i></button>
-                    </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-3">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="assets/navbar/Bhalekarlogo.png" alt="Logo" height="28">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item dropdown position-static">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+          <div class="dropdown-menu mega-dropdown p-0">
+            <div class="row g-0">
+              <div class="col-md-3 text-white p-3">
+                <h6 class="fw-bold">Services</h6>
+                <p>At Bhalekar Consulting, we help businesses transition into the intelligent enterprise era. From strategic AI adoption to full-scale engineering, our services are rooted in deep technology, business acumen, and measurable outcomes.</p>
+                <button class="btn btn-explore btn-sm">Explore</button>
+              </div>
+              <div class="col-md-6 text-white p-3 border-end">
+                <ul class="list-unstyled mega-menu-list">
+                            <li><a href="#" data-submenu="submenu-1">Data & Technology Audits</a></li>
+          <li><a href="#" data-submenu="submenu-2">AI Adoption Consulting</a></li>
+          <li><a href="#" data-submenu="submenu-3">Artificial Intelligence Engineering</a></li>
+          <li><a href="#" data-submenu="submenu-4">Strategic Data & AI Advisory</a></li>
+          <li><a href="#" data-submenu="submenu-5">Data Governance & Compliance</a></li>
+          <li><a href="#" data-submenu="submenu-6">AI-Driven Digital Product Engineering</a></li>
+          <li><a href="#" data-submenu="submenu-7">AI-Powered Business Process Outsourcing</a></li>
+          <li><a href="#" data-submenu="submenu-8">Managed AI & Data Services</a></li>
+          <li><a href="#" data-submenu="submenu-9">AI & Data-Centric Strategy</a></li>
+       </ul>
+              </div>
+              <div class="col-md-3 bg-dark text-white p-3">
+                <div id="submenu-1" class="submenu-content active">
+                  <small class="text-muted">Data & Technology Audits</small>
+                  <ul class="submenu-list list-unstyled">
+                     <li><a href="#" class="text-decoration-none text-light fw-semibold d-block">AI-Powered Business Model Innovation</a></li>
+            <li><a href="#" class="text-decoration-none text-light fw-semibold d-block">Data Monetization And New Product Strategy</a></li>
+            <li><a href="#" class="text-decoration-none text-light fw-semibold d-block">Go-To-Market Plans For AI-Based Startups</a></li>
+            <li><a href="#" class="text-decoration-none text-light fw-semibold d-block">Ecosystem And Platform Partnerships</a></li>
+           </ul>
+                  <img src="assets/navbar/ServiceNav2.jpg" alt="Illustration">
                 </div>
-            </nav>
+                <div id="submenu-2" class="submenu-content">
+                  <small class="text-muted">AI Adoption Consulting</small>
+                  <ul class="submenu-list list-unstyled">
+                    <li><a href="#">Readiness Assessment</a></li>
+                    <li><a href="#">Change Management</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Industries</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Technology</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Insights</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="d-flex align-items-center">
+      <button class="icon-btn" title="Search"><i class="bi bi-search"></i></button>
+      <button class="icon-btn" title="Account"><i class="bi bi-person-circle"></i></button>
+    </div>
+  </div>
+</nav>
+
         </header>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="Scripts.js"></script>
+<script>
+  document.querySelectorAll(".mega-menu-list a").forEach(link => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      const submenuId = this.getAttribute("data-submenu");
+      document.querySelectorAll(".submenu-content").forEach(el => el.classList.add("d-none"));
+      const target = document.getElementById(submenuId);
+      if (target) target.classList.remove("d-none");
+    });
+  });
+</script>
 
 </body>
 
