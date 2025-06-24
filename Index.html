@@ -240,8 +240,9 @@
     </div>
   </section>
 
-  <section class="about-section_2">
-    <div class="container">
+  <section class="about-section_2 position-relative">
+ <div class="container">
+  
       <div class="row align-items-center">
         <div class="col-md-6">
           <h2 class="heading-lg ">The Business Consulting Process</h2>
@@ -257,9 +258,20 @@
         </div>
       </div>
     </div>
+    
     <hr style="color: rgba(0, 0, 0, 0.267);">
 
     <div class="container py-5">
+      <img src="assets/index/arc2.png" alt="Left Arc"
+     class="position-absolute"
+     style=" width: 80px; z-index: 1;" />
+     <!-- Decorative Right Arc and Dot -->
+<img src="assets/index/arc.png" alt="Right Arc" 
+     class="position-absolute bottom-0" 
+     style="width: 80px; right: 300px; z-index: 1;"/>
+ <img src="assets/index/arc2.png" alt="Arc Decoration"
+     class="position-absolute"
+     style="top: 60px; right: 40%; z-index: 0;" />
       <!-- Heading -->
       <div class="text-center text-dark mb-5">
         <h2 class="heading-lg">Our Vision &amp; Values</h2>
@@ -272,7 +284,9 @@
       </div>
 
       <div class="timeline-container text-dark mx-auto">
+        
         <div class="timeline-line"></div>
+        
         <!-- 1: Icon Left, Text Right -->
         <div class="timeline-row row align-items-center mb-5">
           <div class="col-md-5 text-end">
@@ -392,54 +406,50 @@
   </section>
 
 
-  <!-- Reviews Section -->
-  <section class="py-5 text-center review">
-    <div class="container">
-      <h2 class="heading-lg  mb-3">Reviews From Our Users</h2>
-      <p class="text-muted mb-5">We Collect Reviews From Our Users So You Can Get An Honest Opinion Of What An
-        Experience With Our Website Are Really Like!</p>
+<section class="py-5 text-center review" style="background: linear-gradient(to bottom, #f8fcff, #eaf6ff);">
+  <div class="container">
+    <h2 class="heading-lg mb-3">Reviews From Our Users</h2>
+    <p class="text-muted mb-5">We collect reviews from our users so you can get an honest opinion of what an experience with our website is really like!</p>
 
-      <div class="row justify-content-center">
-        <!-- Review Card -->
-        <div class="col-md-4 mb-4">
-          <div class="card bg-dark text-white p-4 rounded-4">
-            <img src="assets/index/Review.png" class="rounded-circle mx-auto mb-3" width="60">
-            <h6 class="fw-semibold mb-1">Rachel Klein</h6>
-            <p class="small">Technical Analyst</p>
-            <div class="text-warning mb-3">
-              ★ ★ ★ ★ ★
-            </div>
-            <p class="small">We've worked with Bhalekar Consulting for multiple data projects. Their AI strategy, model
-              implementation and insights delivery is always fast and accurate.</p>
-          </div>
+    <div class="row justify-content-center">
+      <!-- Review Card 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card text-white p-4 rounded-4" style="background-color: rgba(9, 20, 38, 0.8); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);">
+          <img src="assets/index/Review.png" class="rounded-circle mx-auto mb-3" width="60">
+          <h6 class="fw-semibold mb-1" style="font-size: 1rem;">Rachel Klein</h6>
+          <p class="small text-secondary">Technical Analyst</p>
+          <div class="mb-3" style="color: #4ec9fa; font-size: 1.25rem;">★ ★ ★ ★ ★</div>
+          <p class="small">We've worked with Bhalekar Consulting for multiple data projects. Their AI strategy, model implementation and insights delivery is always fast and accurate.</p>
+          <a href="#" class="d-block mt-2 small text-decoration-none" style="color: #4ec9fa; font-weight: 500;">Read More</a>
         </div>
-        <div class="col-md-4 mb-4">
-          <div class="card bg-dark text-white p-4 rounded-4">
-            <img src="assets/index/Review.png" class="rounded-circle mx-auto mb-3" width="60">
-            <h6 class="fw-semibold mb-1">Thomas Michels</h6>
-            <p class="small">Enterprise Architect</p>
-            <div class="text-warning mb-3">
-              ★ ★ ★ ★ ★
-            </div>
-            <p class="small">Professional and deeply technical. Their advice transformed our operations using Azure and
-              Snowflake. Outstanding partner!</p>
-          </div>
+      </div>
+
+      <!-- Review Card 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card text-white p-4 rounded-4" style="background-color: rgba(9, 20, 38, 0.8); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);">
+          <img src="assets/index/Review.png" class="rounded-circle mx-auto mb-3" width="60">
+          <h6 class="fw-semibold mb-1" style="font-size: 1rem;">Thomas Michels</h6>
+          <p class="small text-secondary">Enterprise Architect</p>
+          <div class="mb-3" style="color: #4ec9fa; font-size: 1.25rem;">★ ★ ★ ★ ★</div>
+          <p class="small">Professional and deeply technical. Their advice transformed our operations using Azure and Snowflake. Outstanding partner!</p>
+          <a href="#" class="d-block mt-2 small text-decoration-none" style="color: #4ec9fa; font-weight: 500;">Read More</a>
         </div>
-        <div class="col-md-4 mb-4">
-          <div class="card bg-dark text-white p-4 rounded-4">
-            <img src="assets/index/Review.png" class="rounded-circle mx-auto mb-3" width="60">
-            <h6 class="fw-semibold mb-1">Nina Adams</h6>
-            <p class="small">BI Director</p>
-            <div class="text-warning mb-3">
-              ★ ★ ★ ★ ★
-            </div>
-            <p class="small">Their Power BI dashboards and Tableau integrations changed how we visualize and communicate
-              performance. Seamless!</p>
-          </div>
+      </div>
+
+      <!-- Review Card 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card text-white p-4 rounded-4" style="background-color: rgba(9, 20, 38, 0.8); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);">
+          <img src="assets/index/Review.png" class="rounded-circle mx-auto mb-3" width="60">
+          <h6 class="fw-semibold mb-1" style="font-size: 1rem;">Nina Adams</h6>
+          <p class="small text-secondary">BI Director</p>
+          <div class="mb-3" style="color: #4ec9fa; font-size: 1.25rem;">★ ★ ★ ★ ★</div>
+          <p class="small">Their Power BI dashboards and Tableau integrations changed how we visualize and communicate performance. Seamless!</p>
+          <a href="#" class="d-block mt-2 small text-decoration-none" style="color: #4ec9fa; font-weight: 500;">Read More</a>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <div id="Bhalekar-footer-placeholder"></div>
 
